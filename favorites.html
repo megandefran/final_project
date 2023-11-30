@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "css/reset.css">
+    <link rel="stylesheet" href = "css/style.css"> 
+    <link href="css/lightbox.min.css" rel="stylesheet">
+     <!-- Add icon library -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&family=Zilla+Slab:wght@500;600&display=swap" rel="stylesheet"> 
+    <title>HomePage/Bio</title>
+</head>
+<body>
+    <a href = "">Skip to Main Content</a>
+    <nav>
+        <div class = "nav-all">
+            <div class = "regular">
+        <ul>
+            <li> <a href= "index.html">HomePage/Bio</a> </li>
+            <li> <a href= "resumepage.html">Resume</a> </li>
+            <li> <a class = "current" href= "favorites.html">Favorites</a> </li>
+            <li> <a href="homes.html">Homes</a></li>
+        </ul>
+            </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Pages</button>
+            <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">HomePage/Bio</a> 
+            <a href= "resumepage.html">Resume</a> 
+            <a class = "current" href= "favorites.html">Favorites</a> 
+            <a href="homes.html">Homes</a>
+            </div>
+        </div>
+        <div class = "name">
+            <h1>Megan DeFrancesco</h1>
+        </div>
+        <div class = "socialmedia">
+            <a href="https://instagram.com/megan_defran?utm_source=qr
+                https://instagram.com/megan_defran?utm_source=qr" aria-label="Instagram">
+                <i class = "fa brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/megan-defrancesco-36056a230/" aria-label="LinkedIn">
+                <i class = "fa brands fa-linkedin"></i>
+            </a>
+        </div>
+        <script>
+            /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+        }
+        }
+    }
+    }
+        </script>
+    </div>
+    </nav>
+
+<main>
+    <div class = "title">
+        <h1>Megan's Favorite Things</h1>
+    </div>
+    <div class = "foods">
+        <h2>Foods</h2>
+        <img src = "https://richanddelish.com/wp-content/uploads/2023/02/creamy-pesto-pasta-1.jpg" alt = "Pesto Pasta">
+        <img src = "https://www.eatingwell.com/thmb/1CF4hEuKg5c53T7dSLwTPjqer6w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/air-fryer-chicken-tenders-8bf02c6e6f1a465387d82d841d3e9574.jpg" alt = "Chicken Tenders">
+        <img src = "https://recipefairy.com/wp-content/uploads/2021/04/how-to-pick-a-watermelon.jpg" alt = "Watermelon">
+        <img src = "https://shewearsmanyhats.com/wp-content/uploads/2013/08/ice-cream-sandwiches-1new-480x480.jpg" alt = "Ice Cream Sandwhiches">
+        <h3>Pesto Pasta</h3>
+        <h3>Chicken Tenders</h3>
+        <h3>Watermelon</h3>
+        <h3>Ice Cream Sandwhich</h3>
+    </div>
+    <div class = "activities">
+        <h2>Activities</h2>
+        <img src = "https://www.brilliant-books.net/sites/brilliant-books.net/files/files/icon1.jpeg" alt = "Books">
+        <img src = "https://i.etsystatic.com/29426154/r/il/db86d6/3799995669/il_fullxfull.3799995669_35iy.jpg" alt = "Puzzle Pieces">
+        <img src = "https://www.shape.com/thmb/oAnU3qGLLeS9CDt7gceJRTo0-po=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/endurance-4d8dfc8fd70741f5a8ee810d816f52d0.jpg" alt = "Woman Hiking">
+        <img src = "https://ew.com/thmb/qjzOmZ7VNmDwq1FaPLi9SfE_6E8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Alyson-Hannigan-and-Sasha-Farber-DWTS-112123-1-22089b4c5fa84280a904f6697b012d8a.jpg" alt = "Couple Dancing">
+        <h3>Reading</h3>
+        <h3>Puzzles</h3>
+        <h3>Hiking</h3>
+        <h3>Dancing</h3>
+    </div>
+    <div class = "others">
+        <h2>Other Likes</h2>
+        <img src = "https://images.sidearmdev.com/crop?url=https%3A%2F%2Fd4njeax0ev936.cloudfront.net%2Fimages%2F2023%2F9%2F21%2F20230921-fbl-gameday.jpg&width=540&height=540" alt = "Michigan Football Team">
+        <img src = "https://tb-static.uber.com/prod/image-proc/processed_images/4fd9489c7a5d448afa094c9915f7c707/4218ca1d09174218364162cd0b1a8cc1.jpeg" alt = "Big Gulp Diet Coke">
+        <img src = "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/spring-flowers-square-carol-groenen.jpg" alt = "Red and Yellow Tulips">
+        <img src = "https://www.ikea.com/us/en/images/products/lugnare-scented-pillar-candle-jasmine-pink__1096836_pe864566_s5.jpg?f=s" alt = "Lit Pink Candles">
+        <h3>Michigan Football</h3>
+        <h3>Diet Coke</h3>
+        <h3>Spring</h3>
+        <h3>Candles</h3>
+    </div>
+</main>
+
+</body>

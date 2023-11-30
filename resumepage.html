@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "css/reset.css">
+    <link rel="stylesheet" href = "css/style.css"> 
+    <link href="css/lightbox.min.css" rel="stylesheet">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&family=Zilla+Slab:wght@500;600&display=swap" rel="stylesheet">  
+    <title>HomePage/Bio</title>
+</head>
+<body>
+    <a href = "">Skip to Main Content</a>
+    <nav>
+        <div class = "nav-all">
+        <div class = "regular">
+            <ul>
+            <li> <a href= "index.html">HomePage/Bio</a> </li>
+            <li> <a class = "current" href= "resumepage.html">Resume</a> </li>
+            <li> <a href= "favorites.html">Favorites</a> </li>
+            <li> <a href="homes.html">Homes</a></li>
+        </ul>
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Pages</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">HomePage/Bio</a>
+                <a class = "current" href= "resumepage.html">Resume</a> 
+                <a href= "favorites.html">Favorites</a> 
+                <a href="homes.html">Homes</a>
+            </div>
+        </div>
+        <div class = "name">
+            <h1>Megan DeFrancesco</h1>
+        </div>
+        <div class = "socialmedia">
+            <a href="https://instagram.com/megan_defran?utm_source=qr
+            https://instagram.com/megan_defran?utm_source=qr" aria-label="Instagram">
+            <i class = "fa brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/megan-defrancesco-36056a230/" aria-label="LinkedIn">
+                <i class = "fa brands fa-linkedin"></i>
+            </a>
+        </div>
+        <script>
+            /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+        }
+        }
+    }
+    }
+        </script>
+    </div>
+    </nav>
+    <main>
+    <center>
+        <h1>Megan's Resume</h1>
+        <h3>Updated November 28, 2023</h3>
+        <iframe src="MeganDeFrancescoResume.pdf"
+                width="1000"
+                height="700">
+        </iframe>
+    </center>
+    </main>
+</body>

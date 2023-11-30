@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "css/reset.css">
+    <link rel="stylesheet" href = "css/style.css"> 
+    <link href="css/lightbox.min.css" rel="stylesheet">
+     <!-- Add icon library -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&family=Zilla+Slab:wght@500;600&display=swap" rel="stylesheet">
+    <title>HomePage/Bio</title>
+</head>
+<body>
+    <a href = "">Skip to Main Content</a>
+    <nav>
+        <div class = "nav-all">
+            <div class = "regular">
+        <ul>
+            <li> <a class = "current" href= "index.html">HomePage/Bio</a> </li>
+            <li> <a href= "resumepage.html">Resume</a> </li>
+            <li> <a href= "favorites.html">Favorites</a> </li>
+            <li> <a href="homes.html">Homes</a></li>
+        </ul>
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Pages</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a class = "current" href="index.html">HomePage/Bio</a>
+            <li> <a href= "resumepage.html">Resume</a> </li>
+            <li> <a href= "favorites.html">Favorites</a> </li>
+            <li> <a href="homes.html">Homes</a></li>
+            </div>
+        </div>
+        <div class = "name">
+            <h1>Megan DeFrancesco</h1>
+        </div>
+        <div class = "socialmedia">
+            <a href="https://instagram.com/megan_defran?utm_source=qr
+                https://instagram.com/megan_defran?utm_source=qr" aria-label="Instagram">
+                <i class = "fa brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/megan-defrancesco-36056a230/" aria-label="LinkedIn">
+                <i class = "fa brands fa-linkedin"></i>
+            </a>
+        </div>
+        <script>
+            /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+        }
+        }
+    }
+    }
+        </script>
+    </div>
+    </nav>
+    <main>
+        <div id = "main-title" class = "page">
+           <div>
+            <h1>Bio</h1>
+            <p>
+                My name is Megan DeFrancesco and I am pursuing a BBA from the Ross School of Business, graduating in May 2025. Additionally, I am minoring in User Experience Design at the University of Michigan School of Information. I am a strong student who is very analytical and logical as well as creative and passionate. Coming up in summer 2024, I will be interning with American Express in their Finance department! Feel free to continue to click through my website to learn more about me through my passions and hobbies as well as read through my resume!
+            </p>
+            </div>
+            <div>
+            <img id = "burst-12" width="300px" src = images/headshot.jpeg alt = "Megan in Ross headshot"> 
+            </div>
+        </div>
+
+        <div class = "links">
+            <div class = "resume-overlay">
+            <img src = "https://static.vecteezy.com/system/resources/thumbnails/012/981/155/small/text-bubble-star-shape-abstract-with-pink-color-png.png" alt = "pink star" id = "first"> 
+            <div class="overlay-text"><a href= "resumepage.html">Resume</a></div>
+            </div>
+            <div class = "resume-overlay" id = "second">
+                <img src = "https://static.vecteezy.com/system/resources/thumbnails/012/981/155/small/text-bubble-star-shape-abstract-with-pink-color-png.png" alt = "pink star"> 
+                <div class="overlay-text"><a href= "favorites.html">Favorites</a></div>
+                </div>
+            <div class = "resume-overlay" id = "third">
+                <img src = "https://static.vecteezy.com/system/resources/thumbnails/012/981/155/small/text-bubble-star-shape-abstract-with-pink-color-png.png" alt = "pink star"> 
+                <div class="overlay-text"><a href= "homes.html">Homes</a></div>
+                </div>
+        </div>
+        <div class = "gallary">
+            <img width = "200" src = images/family.JPG alt = "Megan's Family">
+            <img width = "200" src = images/gameday-friends.JPG alt = "Megan's friends on gameday"> 
+            <img width = "200" src = images/P1050230.jpeg alt = "Megan's boyfriend">
+            <img width = "200" src = images/home_friends.jpeg alt = "Megan's home friends">
+        </div>
+        <div class="row">
+            <div class="column"> 
+            <img src="images/family.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow" style="width:auto" alt = "Megan's Family">
+            </div>
+                <div class="column">
+                  <img src="images/gameday-friends.JPG" onclick="openModal();currentSlide(2)" class="hover-shadow" style="width:auto" alt = "Megan's friends on gameday">
+                </div>
+                <div class="column">
+                  <img src="images/P1050230.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow" style="width:auto" alt = "Megan's boyfriend">
+                </div>
+                <div class="column">
+                    <img src="images/home_friends.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow" style="width:auto" alt = "Megan's home friends">
+                  </div>
+        </div>
+        <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="images/family.JPG" style="width:auto" alt = "Megan's Family">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/gameday-friends.JPG" style="width:auto" alt = "Megan's friends on gameday">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="images/P1050230.jpeg" style="width:auto" alt = "Megan's boyfriend">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/home_friends.jpeg" style="width:auto" alt = "Megan's home friends">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="images/family.JPG" onclick="currentSlide(1)" alt="My Family">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="images/gameday-friends.JPG" onclick="currentSlide(2)" alt="My friends on gamedays">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="images/P1050230.jpeg" onclick="currentSlide(3)" alt="My boyfriend, Gavin">
+      </div>
+      <div class="column">
+        <img class="demo" src="images/home_friends.jpeg" onclick="currentSlide(3)" alt="Megan's hometown friends">
+      </div>
+    </div>
+  </div>
+  <script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+    </main>
+
+  </body>
